@@ -1,0 +1,21 @@
+[project]
+name = "wch"
+version = "0.1.0"
+description = "Simple websocket chat research"
+readme = "README.md"
+authors = [
+    { name = "wfrr", email = "cyberdak095@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = []
+
+[project.scripts]
+wch = "wch:main"
+
+[build-system]
+requires = ["uv_build>=0.12.17,<0.13.0"]
+build-backend = "uv_build"
+
+[tool.ruff]
+line-length = 80
+indent-width = 4
