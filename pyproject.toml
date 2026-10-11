@@ -1,6 +1,6 @@
 [project]
 name = "wch"
-version = "0.1.0"
+version = "0.2.0"
 description = "Simple websocket chat research"
 readme = "README.md"
 authors = [
@@ -19,3 +19,9 @@ build-backend = "uv_build"
 [tool.ruff]
 line-length = 80
 indent-width = 4
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+    "websockets>=17.2",
+]
